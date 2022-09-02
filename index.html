@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content-wraper {
+            width: 100%;
+            height: max-content;
+            max-width: 700px;
+            padding: 30px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .copyright {
+            color: #FFF;
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+        .copyright a {
+            color: #FFF;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content-wraper">
+            <form class="col-md-10 m-auto py-5">
+                <div class="input-group mb-3">
+                    <input type="search" class="form-control location" placeholder="Enter a location for Weather ...">
+                    <div class="input-group-append">
+                        <button type="button" class="btn-success btn submit-city">Search</button>
+                    </div>
+                </div>
+
+                <p class="respons" style="text-align: center; color: #FFF; display: none;"></p>
+            </form>
+            <div class="weather-status text-white text-center">
+                <img style="filter: invert(1) brightness(100);" src="" alt="">
+                <h1></h1>
+                <h3><span></span>&deg;C</h3>
+                <p style="text-transform: capitalize;"></p>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">Made by &hearts; <a href="http://sabappy.com" target="_blank" rel="noopener noreferrer">SA Bappy</a></p>
+    <script src="./app.js"></script>
+</body>
+
+</html>
