@@ -1,1 +1,2 @@
-# miniature-carnival
+# Weather API
+Powered By: openweathermap.org
